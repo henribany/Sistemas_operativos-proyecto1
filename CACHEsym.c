@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Raul, Henri, Pedro
 void acceso_mem(unsigned int* line);
 void proceso_CACHEsym();
 void  fijar(unsigned int num_bloque);
