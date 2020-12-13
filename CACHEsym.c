@@ -25,8 +25,7 @@ void proceso_CACHEsym() {		// Proceso principal de la cache
 	int numfallos = 0;
 	unsigned int a = 0xFF;
 	unsigned int b = 0x00;
-	int j, i, x, k, f;
-	f = 0;
+	int j, i, x, k;
 	for (i = 0; i < 4; i++) {			// etq a ff y datos a 0 
 		fflush(stdin);
 		cache[i].ETQ = a;
@@ -47,7 +46,7 @@ void proceso_CACHEsym() {		// Proceso principal de la cache
 
 	unsigned int cache_acceso_mem[11];			// Array de las direcciones del fichero ACCESOS_MEMORIA.txt
 	acceso_mem(cache_acceso_mem);
-
+			int f=0;
 	for (x = 0; x < 12 ;x++) {
 		unsigned int linea = (cache_acceso_mem[x] & 0b0000011000)/ pow(2,3);
 		unsigned int bloque = (cache_acceso_mem[x] & 0b1111111000) / pow(2, 3);
@@ -66,11 +65,12 @@ void proceso_CACHEsym() {		// Proceso principal de la cache
 		else {
 			printf("T: %d, Acierto de CACHE, ADDR %04X ETQ %X linea %02X palabra %02X DATO %02X \n", tiempoglobal, cache_acceso_mem[x], etq, linea, palabra, RAM[palabrahex]);
 			tiempoglobal = tiempoglobal + 1;
-			for (k = 0;k < 8; k++) {
+			for (k = 0;k<8; k++) {
 				texto[f] = cache[linea].Datos[k];
 				f++;
 			}
 		}
+	sleep(2);
 	contaccesos++;
 	}
 	imprimir();
@@ -95,8 +95,8 @@ void imprimir() {			// Imprimir los datos y la etq de la cache
 	int x, w;
 	printf("\n");
 	for (x = 0; x < 4; x++) {
-		printf("ETQ:%X Datos ", cache[x].ETQ);
-		for (w = 0; w < 7; w++) {
+		printf("ETQ:%02X Datos ", cache[x].ETQ);
+		for (w = 7; w >=0; w--) {
 			printf("%02X ", cache[x].Datos[w]);
 		}
 		printf("\n");
