@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void acceso_mem(unsigned int* line);
 void proceso_CACHEsym();
@@ -114,7 +115,7 @@ void imprimirTexto(unsigned char* texto) {			// Imprimir Datos acierto
 void acceso_mem(unsigned int* line) {		// Lectura fichero de las direcciones a memoria
 	int w;
 	FILE* fpointer2;
-	fpointer2 = fopen("ACCESOS_MEMORIA.txt", "r");
+	fpointer2 = fopen("accesos_memoria.txt", "r");
 	if (fpointer2 == NULL) {
 		printf("No se ha podido cargar el fichero\n");
 		exit(-1);
