@@ -1,32 +1,30 @@
-T: 0, Fallo de CACHE 1, ADDR 02E4 ETQ 4 linea 00 palabra 04 bloque 64
-Cargando el bloque 100, en la linea 0 
-T: 10, Fallo de CACHE 2, ADDR 0200 ETQ 0 linea 00 palabra 00 bloque 00
-Cargando el bloque 0, en la linea 0 
-T: 20, Fallo de CACHE 3, ADDR 0208 ETQ 8 linea 00 palabra 00 bloque 08
-Cargando el bloque 8, en la linea 0 
-T: 30, Fallo de CACHE 4, ADDR 0109 ETQ 9 linea 01 palabra 01 bloque 09
-Cargando el bloque 9, en la linea 1 
-T: 40, Fallo de CACHE 5, ADDR 010A ETQ A linea 02 palabra 02 bloque 0A
-Cargando el bloque 10, en la linea 2 
-T: 50, Fallo de CACHE 6, ADDR 020B ETQ B linea 03 palabra 03 bloque 0B
-Cargando el bloque 11, en la linea 3 
-T: 60, Acierto de CACHE, ADDR 0209 ETQ 9 linea 01 palabra 01 DATO 62 
-T: 61, Fallo de CACHE 7, ADDR 001C ETQ 1C linea 00 palabra 04 bloque 1C
-Cargando el bloque 28, en la linea 0 
-T: 71, Fallo de CACHE 8, ADDR 001D ETQ 1D linea 01 palabra 05 bloque 1D
-Cargando el bloque 29, en la linea 1 
-T: 81, Acierto de CACHE, ADDR 030B ETQ B linea 03 palabra 03 DATO 64 
-T: 82, Fallo de CACHE 9, ADDR 030F ETQ F linea 03 palabra 07 bloque 0F
-Cargando el bloque 15, en la linea 3 
-T: 92, Fallo de CACHE 10, ADDR 0010 ETQ 10 linea 00 palabra 00 bloque 10
-Cargando el bloque 16, en la linea 0 
+T: 0, Fallo de CACHE 1, ADDR 02E4 ETQ 17 linea 00 palabra 04 bloque 5C
+Cargando el bloque 5C, en la linea 00 
+T: 10, Fallo de CACHE 2, ADDR 0200 ETQ 10 linea 00 palabra 00 bloque 40
+Cargando el bloque 40, en la linea 00 
+T: 20, Fallo de CACHE 3, ADDR 0208 ETQ 10 linea 01 palabra 00 bloque 41
+Cargando el bloque 41, en la linea 01 
+T: 30, Fallo de CACHE 4, ADDR 0109 ETQ 8 linea 01 palabra 01 bloque 21
+Cargando el bloque 21, en la linea 01 
+T: 40, Acierto de CACHE, ADDR 010A ETQ 8 linea 01 palabra 02 DATO 6B 
+T: 41, Fallo de CACHE 5, ADDR 020B ETQ 10 linea 01 palabra 03 bloque 41
+Cargando el bloque 41, en la linea 01 
+T: 51, Acierto de CACHE, ADDR 0209 ETQ 10 linea 01 palabra 01 DATO 6A 
+T: 52, Fallo de CACHE 6, ADDR 001C ETQ 0 linea 03 palabra 04 bloque 03
+Cargando el bloque 03, en la linea 03 
+T: 62, Acierto de CACHE, ADDR 001D ETQ 0 linea 03 palabra 05 DATO 6E 
+T: 63, Fallo de CACHE 7, ADDR 030B ETQ 18 linea 01 palabra 03 bloque 61
+Cargando el bloque 61, en la linea 01 
+T: 73, Acierto de CACHE, ADDR 030F ETQ 18 linea 01 palabra 07 DATO 70 
+T: 74, Fallo de CACHE 8, ADDR 0010 ETQ 0 linea 02 palabra 00 bloque 02
+Cargando el bloque 02, en la linea 02 
 
-ETQ:10 Datos 63 64 65 66 67 68 69 
-ETQ:1D Datos 67 68 69 6A 6B 6C 6D 
-ETQ:A Datos 65 66 67 68 69 6A 6B 
-ETQ:F Datos 74 75 76 77 78 79 61 
+ETQ:10 Datos 6D 6E 6F 70 71 72 73 
+ETQ:18 Datos 62 63 64 65 66 67 68 
+ETQ:0 Datos 71 72 73 74 75 76 77 
+ETQ:0 Datos 79 61 62 63 64 65 66 
 
 Numero accesos: 12
-Numero fallos: 10
-Tiempo medio de acceso: 8.500000
-Datos leidos  : 76777879616263646D6E6F70717273740000000000000000
+Numero fallos: 8
+Tiempo medio de acceso: 7.000000
+Datos leidos  : opqrstuvuvwxyabcyabcdefgbcdefghi
